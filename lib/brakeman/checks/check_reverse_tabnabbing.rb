@@ -1,7 +1,7 @@
 require 'brakeman/checks/base_check'
 
 class Brakeman::CheckReverseTabnabbing < Brakeman::BaseCheck
-  Brakeman::Checks.add_optional self
+  Brakeman::Checks.add self
 
   @description = "Checks for reverse tabnabbing cases on 'link_to' calls"
 
